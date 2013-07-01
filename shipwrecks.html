@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.0.4/mapbox.js'></script>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.4/mapbox.css' rel='stylesheet' />
+    <!--[if lte IE 8]>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.ie.css' rel='stylesheet' >
+    <![endif]-->
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+		.popup .slideshow img{ 
+			max-width:325px !important;
+			max-height:400px;
+			margin:auto;
+		}
+		.popup .pcred{
+			font-size:10px;
+			width:100%;
+			text-align:right;
+			color: rgb(103, 103, 103);
+		}
+		.popup .slideshow {
+		    width: 100%;
+		}
+		.popup .slideshow .slide {
+		    display: none;
+		}
+		.popup .slideshow .slide .image{
+			text-align:center;
+		}
+		.popup .slideshow .active {
+		    display: block;
+		}
+		.popup .slideshow .caption {
+		   /* background: #eee;*/
+		    padding: 8px;
+		}
+		.popup .cycle {
+		    height: 30px;
+		    margin-top: 5px;
+		    padding-top: 5px;
+		}
+		.popup .cycle a.prev {
+		    float: left;
+		}
+		.popup .cycle a.next {
+		    float: right;
+		}
+    </style>
+</head>
+<body>
+<div id='map'></div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type='text/javascript'>
+var map = L.mapbox.map('map', 'examples.a3cad6da')
+    .setView([31.399000, -80.600006], 9);
+	var myIcon = L.icon({
+	    iconUrl: 'img/shipwreck.png',
+	    iconRetinaUrl: 'img/shipwreck.png',
+	    iconSize: [32, 37],
+	    iconAnchor: [15, 37],
+	    popupAnchor: [-3, 0]
+	});
+    $.getJSON('shipwrecks.geojson', function(geojson) {
+		doMap(geojson);
+    });
+function doMap(geojson){
+	// Add custom popups to each using our custom feature properties
+	map.markerLayer.on('layeradd', function(e) {
+	    var marker = e.layer,
+	        feature = marker.feature;
+			marker.setIcon(myIcon);
+	});
+	map.markerLayer.setGeoJSON(geojson);	
+}
+
+// Add custom popup html to each marker
+map.markerLayer.on('layeradd', function(e) {
+    var marker = e.layer;
+    var feature = marker.feature;
+    var images = feature.properties.images
+    var slideshowContent = '';
+	var popupContent = '';
+
+	if(images != null){
+    	for(var i = 0; i < images.length; i++) {
+        	var img = images[i];
+        	slideshowContent += '<div class="slide' + (i === 0 ? ' active' : '') + '"><div class="image">' +
+                              '<img src="' + img[0] + '" />' +
+                             '</div><span class="pcred">'+img[1]+'</span><div class="caption">' +feature.properties.description + '</div></div>';
+    	}
+		popupContent = '<div id="' + feature.properties.id + '" class="popup">' +
+                            '<h2>' + feature.properties.title + '</h2>' +
+                            '<div class="slideshow">' +
+                                slideshowContent +
+                            '</div>';
+		if(images.length >1){
+			popupContent += '<div class="cycle">' +
+                                '<a href="#" class="prev" onclick="return moveSlide(\'prev\')">&laquo; Previous</a>' +
+                                '<a href="#" class="next" onclick="return moveSlide(\'next\')">Next &raquo;</a>' +
+                         '</div>';
+		}
+		popupContent += '</div>';
+	}
+	else{
+    	var popupContent =  '<div id="' + feature.properties.id + '" class="popup">' +
+                            '<h2>' + feature.properties.title + '</h2>' +
+							'<p class="year">Year wrecked: '+feature.properties.year+'</p><p class="description">'+feature.properties.description+'</p></div></div>';
+	}
+	// http://leafletjs.com/reference.html#popup
+	marker.bindPopup(popupContent,{
+        closeButton: true,
+        minWidth: 320
+	});
+});
+
+function moveSlide(direction) {
+    var $slideshow = $('.slideshow'),
+        totalSlides = $slideshow.children().length;
+
+    if (direction === 'prev') {
+        var $newSlide = $slideshow.find('.active').prev();
+        if ($newSlide.index() < 0) {
+            $newSlide = $('.slide').last();
+        }
+    } else {
+        var $newSlide = $slideshow.find('.active').next();
+        if ($newSlide.index() < 0) {
+            $newSlide = $('.slide').first();
+        }
+    }
+
+    $slideshow.find('.active').removeClass('active').hide();
+    $newSlide.addClass('active').show();
+    return false;
+}
+</script>
+</body>
+</html>

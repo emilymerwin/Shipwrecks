@@ -1,0 +1,218 @@
+[{"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.100906, 32.091736]
+		},
+		"properties": {
+			"ID": "1",
+			"title": "Dave's Derelict",
+			"year": "Late 19th/early 20th century",
+			"images":[["img/ships/daves6.jpg", "CURTIS COMPTON/AJC"],["img/ships/daves5.jpg", "CURTIS COMPTON/AJC"],["img/ships/daves1.jpg", "CURTIS COMPTON/AJC"],["img/ships/daves2.jpg", "CURTIS COMPTON/AJC"],["img/ships/daves3.jpg", "CURTIS COMPTON/AJC"],["img/ships/daves4.jpg", "CURTIS COMPTON/AJC"]],
+			"Location": "-81.100906,32.091736",
+			"description": "A tug boat with screw propeller, from the late 19th or early 20th century, affectionately named for David Crass, director of historic preservation for the state of Georgia. At low tide, the ship’s boiler rises from the mud of Hutchinson Island’s western edge near the Talmadge Bridge. ", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.092316, 32.097992]
+		},
+		"properties": {
+			"ID": "2",
+			"title": "Back River Wreck",
+			"year": "19th century",
+			"images":[["img/ships/backriverwreck.jpg", "CURTIS COMPTON/AJC"]],
+			"Location": "-81.092316,32.097992",
+			"description": "Back River Wreck – Many ships were purposefully scuttled on the little-used Back River, including a post-Reconstruction era double-mast schooner that probably carried timber, rice or salt. At low tide the 120-foot long vessel -- exposed like a fish filleted down the middle – can be viewed from the Georgia side of the U.S. 17 bridge. Owners routinely ran their vessels aground, burned them to the waterline and salvaged what they could.", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.036613, 32.083084]
+		},
+		"properties": {
+			"ID": "3",
+			"title": "CSS Georgia",
+			"year": "1864",
+			"images": [["img/ships/cssga3.jpg", "CURTIS COMPTON/AJC"],["img/ships/csscanons1b.jpg", "CURTIS COMPTON/AJC"],["img/ships/CSSGeorgia1.jpg", "U.S. Army Corps of Engineers"],["img/ships/CSSGA2b.jpg", "U.S. Army Corps of Engineers"]],
+			"Location": "-81.036613,32.083084",
+			"description": "CSS Georgia – Georgia’s most famous shipwreck was little more than an iron-wrapped floating cannon platform before she was scuttled by Confederate troops in 1864 as Union forces converged on Savannah. The federal government is expected to begin raising what remains of the Georgia later this year.", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-80.833969, 32.017391]
+		},
+		"properties": {
+			"ID": "4",
+			"title": "The Mary E. Chapman",
+			"year": "1891",
+			"Location": "-80.833969,32.017391",
+			"description": "Mary E. Chapman – A British merchant ship en route from Canada to Savannah to load up on turpentine and other stores when it ran aground in a February 1891 storm two miles off Tybee Island. Weather conditions were so bad that the quarantine officer in Savannah couldn’t roust a crew to rescue those on board. But Heter Dodge, the doctor’s African-American assistant, volunteered and rowed out to help. All were saved. The Canadian government awarded the doctor a gold watch and Dodge a silver medal (valued at $25). ", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-80.781097, 32.010406]
+		},
+		"properties": {
+			"ID": "5",
+			"title": "HMS Defiance",
+			"year": "1780",
+			"Location": "-80.781097,32.010406",
+			"description": "HMS Defiance – A third-rate British warship built in 1771 and lost in a March 1780 storm as the Revolutionary War raged in the South. The 64-gun vessel went down where the Savannah River reaches the Atlantic. Nobody died, but news reports of the time say Capt. Maximilian Jacobs was court-martialed for the ship’s loss.", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-80.727539, 32.029034]
+		},
+		"properties": {
+			"ID": "6",
+			"title": "Frank Harrington",
+			"year": "1890",
+			"Location": "-80.727539,32.029034",
+			"description": "Frank Harrington – The three-masted schooner bound for Savannah from Maine went down in a January 1890 storm near the mouth of the Savannah River. The vessel carried 685 tons of fish scraps, used as cotton fertilizer, bound for two guano companies. All on board were saved, but not the fish bits.", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.12854, 31.951288]
+		},
+		"properties": {
+			"ID": "7",
+			"title": "USS Water Witch",
+			"year": "1864",
+			"images": [["img/ships/waterwitch.jpg", "Historical photo"]],
+			"Location": "-81.128540,31.951288",
+			"description": "USS Water Witch -- While stationed near\nSavannah, the double-mast, side-wheel steamer was captured by Confederate naval forces in a daring nighttime raid. Moses Dallas – a freed slave and a Confederate officer – was supposed to pilot the ship, but was killed during the\nraid. Unable to guide the Water Witch without a pilot, the Confederates hid the vessel before scuttling her in December 1864. Her picked-over remains lay in mud\nup the Vernon River.\n\n", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.200638, 31.893883]
+		},
+		"properties": {
+			"ID": "8",
+			"title": "Rattlesnake",
+			"year": "1863",
+			"images": [["img/ships/rattlesnake.jpg", "R.G. Skerrett (1851)"]],
+			"Location": "-81.200638,31.893883",
+			"description": "Rattlesnake – Originally a passenger ship, the 1,200- ton side-wheel steamer was seized by the Confederacy at Charleston in 1861 and converted into an armed cruiser. She later operated as a blockade runner delivering guns to Confederate troops and cotton to England. In February 1863, the Rattlesnake was sunk by the USS Montauk on the Ogeechee River across from Fort McAllister. ", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.176605, 31.693119]
+		},
+		"properties": {
+			"ID": "9",
+			"title": "Enoch Dean",
+			"year": "1865",
+			"images": [["img/ships/enoch_dean.jpg", "Creative Commons"]],
+			"Location": "-81.176605,31.693119",
+			"description": "Enoch Dean – The side-wheel steamer, used by the Freedmen’s Bureau, sank in April 1865 as she ferried ex-slaves to Ossabaw Island. All were rescued, but the 136-foot long ship’s cargo – farm equipment, furniture, seeds -- went down in St. Catherine Sound. Still owned by the federal government, historians believe the shipwreck has remained untouched and, if excavated, would tell a rich tale.", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.127167, 31.672083]
+		},
+		"properties": {
+			"ID": "10",
+			"title": "Albion",
+			"year": "1824",
+			"Location": "-81.127167,31.672083",
+			"description": "Albion – The British merchant ship,\nen route to England from the Bay of Honduras with a load of mahogany, ran into\na “disasterous hurricane,” a newspaper\nreported, off St. Catherines Island in September 1824. The ship, with five\nsailors and a monkey named Jacko, drifted for five days before running aground\non a sandbar. The starving sailors ate Jacko “raw with some rain,” the Daily\nGeorgian reported.\n\n", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.427917, 31.151707]
+		},
+		"properties": {
+			"ID": "11",
+			"title": "Magnolia",
+			"year": "1852",
+			"Location": "-81.427917,31.151707",
+			"description": "Magnolia – A coastal steamboat exploded and partially sank in January 1852 on the Frederica River that wends through St. Simons Island. A dozen people died. The ship’s forward section floated downriver and may have ended up five miles away on Jekyll Island’s Driftwood Beach. Erosion from a 2008 tropical storm exposed a ship’s bow that many believe to be the Magnolia’s.", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.397018, 31.109976]
+		},
+		"properties": {
+			"ID": "12",
+			"title": "Petrel",
+			"year": "1878",
+			"Location": "-81.397018,31.109976",
+			"description": "Petrel – Headed for right whale hunting grounds off the Georgia\ncoast, the 61-ton Massachusetts schooner ran aground on Jekyll Island in\nFebruary 1878. The double-masted schooner was one of the last U.S. whale\nhunters. The vessel was salvaged and 85 barrels of sperm oil and whale bones\nbrought $12,000 at auction. \n\n", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.400452, 30.892797]
+		},
+		"properties": {
+			"ID": "13",
+			"title": "Cumberland Shipwreck",
+			"year": "19th century",
+			"images": [["img/ships/cumberland.jpg", "Handout"], ["img/ships/cumberland2.jpg", "Handout"]],
+			"Location": "-81.400452,30.892797",
+			"description": "'Cumberland Shipwreck' – Uncovered last Christmas after a storm blew away decades of Cumberland Island sand, the mid-1800s ship remains a mystery. Archaeologists suspect it was a cargo ship or maybe a blockade during the Civil War. The ship’s remnants were re-covered in sand for preservation. Georgia and federal officials are investigating its origins. ", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.416931, 30.811449]
+		},
+		"properties": {
+			"ID": "14",
+			"title": "Gunboat No. 2",
+			"year": "1811",
+			"Location": "-81.416931,30.811449",
+			"description": "\nGunboat No. 2 – One of the ragtag Jeffersonian gunboats that defended the East Coast before and during the War of 1812. President Jefferson, loath to build a large U.S. Navy, also deployed the galley gunboats to fight the Barbary pirates. No.\n2 was ferrying troops from Charleston to St. Marys, the border with Spanish-controlled Florida. The 60-foot long gunboat, with three dozen men on board, went down in an October 1811 storm off Cumberland Island. One man survived.\n\n", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+	}, {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-79.793823, 30.614277]
+		},
+		"properties": {
+			"ID": "15",
+			"title": "SS Republic",
+			"year": "1865",
+			"images": [["img/ships/ss-republic.jpg", "Odyssey Marine Exploration"]],
+			"Location": "-79.293823,30.614277",
+			"description": "SS Republic – The 210-foot long vessel served as a ferry to Central America, a blockade runner and a Union warship before ending up as one of the most lucrative wrecks in\nU.S. maritime history. She went down in an October 1865 hurricane about 100 miles southeast of Savannah. Most of the men, women and children en route to New Orleans survived. But $400,000 in gold and silver coins went to the bottom. A commercial scavenger discovered many of the coins in 2003 and sold them for a reported $75 million.\n\n", "marker-size": "large",
+        "marker-color": "#f0a"
+		}
+}]
